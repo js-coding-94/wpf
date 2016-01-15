@@ -24,9 +24,9 @@
 $(document).ready(function() {
 
     $('.project-frame').hover(function(){
-      $('.project-text',this).slideToggle('slow');
+      $('.project-text',this).stop().slideToggle('slow');
     }, function(){
-      $('.project-text',this).slideToggle('slow');
+      $('.project-text',this).stop().slideToggle('slow');
       });
 });
 
