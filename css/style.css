@@ -1,0 +1,256 @@
+.heading-style, #header-text, .headline {
+  font-family: "Lato" !important;
+  text-align: center;
+  color: #fff;
+  letter-spacing: 5px;
+  text-shadow: 1px 1px 2px #000; }
+
+#header {
+  background: url("img/header.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  border: 1px solid transparent;
+  background-attachment: fixed; }
+
+@media only screen and (max-width: 40em) {
+  #header {
+    background: url("img/header_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    border: 1px solid transparent; } }
+#header-text {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.headline {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.heading-doc {
+  font-family: "Lato" !important;
+  text-align: center;
+  color: #222;
+  letter-spacing: 5px;
+  margin-bottom: 5%; }
+
+.section-aboutme {
+  background: url("img/aboutme.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border: 1px solid transparent; }
+
+.section-projects {
+  background: url("img/projects.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+
+.section-contact {
+  background: url("img/contact.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px; }
+
+.section-gallery {
+  background: url("img/gallery.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border: 1px solid transparent; }
+
+.section-docu {
+  background: url("img/documentation.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border: 1px solid transparent; }
+
+@media only screen and (max-width: 40em) {
+  .section-aboutme {
+    background: url("img/aboutme_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px; }
+
+  .section-projects {
+    background: url("img/projects_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px; }
+
+  .section-contact {
+    background: url("img/contact_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px; }
+
+  .section-gallery {
+    background: url("img/gallery_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid transparent; }
+
+  .section-docu {
+    background: url("img/documentation_mobile.gif") no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100px;
+    border: 1px solid transparent; } }
+.accordion-navigation a {
+  font-family: "Lato" !important;
+  text-align: center; }
+
+.sub-nav {
+  margin: auto;
+  width: 70%; }
+  .sub-nav a {
+    font-size: 16px; }
+  .sub-nav dd {
+    font-family: "Lato" !important;
+    text-transform: uppercase; }
+  .sub-nav dd.active a {
+    background: #D7B55E; }
+  .sub-nav dd.active a:hover {
+    background: #D1A73B; }
+
+#logo {
+  float: left; }
+
+#right-nav {
+  float: right; }
+
+#back-nav {
+  float: right; }
+  #back-nav a {
+    color: #fff;
+    background: #D7B55E;
+    border-radius: 3px; }
+  #back-nav a:hover {
+    background: #D1A73B;
+    border-radius: 3px; }
+
+.goto a {
+  color: transparent !important; }
+.goto a:focus {
+  color: #999 !important; }
+
+.off-canvas-wrap {
+  display: none; }
+
+.title {
+  font-family: Courier New !important; }
+
+#img-logo {
+  max-width: 70%; }
+
+@media only screen and (max-width: 40em) {
+  .off-canvas-wrap {
+    display: block; }
+
+  .normal-menu {
+    display: none !important; } }
+.button {
+  font-family: "Lato" !important;
+  background-color: #222; }
+
+.button:hover, .button:focus {
+  background-color: #D1A73B; }
+
+.more {
+  width: 100%;
+  max-width: 500px; }
+
+.project-frame {
+  position: relative;
+  color: #fff;
+  max-width: 500px; }
+
+.project-text {
+  display: none;
+  opacity: 0.85;
+  background: #222;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  padding: 5px; }
+  .project-text h3 {
+    font-family: "Lato" !important;
+    color: #fff; }
+
+.tab-nav {
+  text-align: center;
+  margin-bottom: 3%; }
+
+.tabs {
+  display: inline-block; }
+  .tabs .tab-title a {
+    font-family: "Lato" !important;
+    color: #fff;
+    background: #D7B55E; }
+  .tabs .tab-title a:hover {
+    font-family: "Lato" !important;
+    color: #fff;
+    background: #D1A73B; }
+
+.tabs-content > .content.active {
+  -webkit-animation: fadeEffect 1s;
+  animation: fadeEffect 1s; }
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+body, h2 {
+  font-family: "Lato" !important; }
+
+.site-content {
+  margin: 5% 2% 5% 2%; }
+
+#div_me {
+  text-align: center; }
+
+#me {
+  width: 400px;
+  max-width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%; }
+
+.round {
+  font-family: "Lato" !important;
+  background-color: #D7B55E;
+  float: right; }
+
+#footer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: url("img/footer.png");
+  background-position: center; }
+  #footer a {
+    color: #fff; }
+  #footer a:hover {
+    color: #D1D1D1; }
+
+#nav-footer {
+  text-align: center; }
+  #nav-footer a {
+    padding: 0.1875rem 1rem; }
+
+/*# sourceMappingURL=style.css.map */

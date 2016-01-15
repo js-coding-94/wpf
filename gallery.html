@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johannes Schick | Gallery</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- verwendete Schriftart von Google einbinden -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <!-- icon für back-navigation einbinden -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+    <!-- selbst geschriebenes Stylesheet einbinden -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+
+<!-- NAVIGATIONSBEREICH -->
+
+<!-- MENUBAR FÜR MOBILE ANSICHT -->
+
+<div class="off-canvas-wrap docs-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">{ j.schick }</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="top-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+    </nav>
+
+    <aside class="top-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Menu</label></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </aside>
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+<!-- MENUBAR FÜR NORMALE ANSICHT -->
+
+<div data-magellan-expedition="fixed" class="normal-menu">
+  <dl class="sub-nav"> 
+    <section id="logo">
+      <dd><a href="index.html"><img src="css/img/logo.png" id="img-logo"></a></dd>
+      <dd><section class="goto"><a href="#heading-doc" tabindex="1">Go to Content</a></section></dd>
+      <dd><section class="goto"><a href="#footer" tabindex="2">Go to End</a></section></dd>
+    </section>
+    <section id="back-nav">
+    <dd><a href="index.html" tabindex="3"><i class="fa fa-angle-double-right"></i> back to main page</a></dd>
+  </section>
+  </dl>
+</div>
+
+  <!-- GALLERY BEREICH -->
+
+<div class="section-gallery">
+<h1 data-magellan-destination="about" class="headline">{ gallery }</h1>
+</div>
+
+<div class="site-content">
+
+<h2 class="heading-doc" id="heading-doc" tabindex="4">This could be awesome... if I had pictures to show!</h2>
+
+<ul class="example-orbit" data-orbit tabindex="5">
+  <li>
+    <img src="css/img/pro2.gif" alt="A picture of me working on this project" tabindex="6" />
+    <div class="orbit-caption">
+      This is me working on my photos for this project.
+    </div>
+  </li>
+  <li class="active">
+    <img src="css/img/pro1.gif" alt="A picture of a random programmer" tabindex="7" />
+    <div class="orbit-caption">
+      This is a random programmer who clearly spent too much time in front of his PC.
+    </div>
+  </li>
+  <li>
+    <img src="css/img/pro.gif" alt="A picture of a programmer graphic" tabindex="8" />
+    <div class="orbit-caption">
+      This is actually a cool graphic.
+    </div>
+  </li>
+</ul>
+
+</div>
+
+<!-- FOOTER BEREICH -->
+
+<footer id="footer">
+<section id="nav-footer">
+  <a href="documentation.html" tabindex="9">Documentation</a>
+  <a href="impressum.html" tabindex="10">Impressum</a>
+  <a href="gallery.html" tabindex="11">Gallery</a>
+</section>
+</footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>

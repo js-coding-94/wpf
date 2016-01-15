@@ -1,0 +1,126 @@
+$main-font: "Lato" !important;
+$sticky-header: 1px solid transparent;
+
+// this mixin sets every component inside another component vertically align to the middle:
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+//this mixin provides everything to set up the section headlines:
+@mixin section-heading($background, $height){
+	background: $background no-repeat;
+	background-position: center;
+	width: 100%;
+	height: $height;
+}
+
+// this mixin sets the font to Lato and the align to center:
+@mixin main-center{
+    font-family: $main-font;
+    text-align: center;
+}
+
+// inner class -> extend
+.heading-style{
+	font-family: $main-font;
+	text-align: center;
+	color: #fff;
+	letter-spacing: 5px;
+	text-shadow: 1px 1px 2px #000;
+}
+
+//////////////
+// HEADING:
+//////////////
+
+#header{
+	@include section-heading(url('img/header.png'), 600px);
+	border: $sticky-header;
+    background-attachment: fixed;
+}
+
+@media only screen and (max-width: 40em) { 
+
+	#header{
+		@include section-heading(url('img/header_mobile.gif'), 200px);
+		border: $sticky-header;
+	}
+}
+
+#header-text{
+	@extend .heading-style;
+    @include vertical-align;
+}
+
+.headline{
+	@extend .heading-style;
+	@include vertical-align;
+}
+
+.heading-doc{
+	@include main-center;
+	color: #222;
+	letter-spacing: 5px;
+	margin-bottom: 5%;
+}
+
+.section-aboutme{
+	@include section-heading(url('img/aboutme.png'), 300px);
+	border: $sticky-header;
+}
+
+.section-projects{
+	@include section-heading(url('img/projects.png'), 300px);
+}
+
+.section-contact{
+	@include section-heading(url('img/contact.png'),300px);
+}
+
+.section-gallery{
+	@include section-heading(url('img/gallery.png'),300px);
+	border: $sticky-header;
+}
+
+.section-docu{
+	@include section-heading(url('img/documentation.png'),300px);
+	border: $sticky-header;
+}
+
+//section-size for mobile version:
+
+@media only screen and (max-width: 40em) { 
+
+	.section-aboutme{
+		@include section-heading(url('img/aboutme_mobile.gif'),100px);
+	}
+
+	.section-projects{
+		@include section-heading(url('img/projects_mobile.gif'),100px);
+	}
+
+	.section-contact{
+		@include section-heading(url('img/contact_mobile.gif'),100px);
+	}
+
+	.section-gallery{
+		@include section-heading(url('img/gallery_mobile.gif'),100px);
+		border: $sticky-header;
+	}
+
+	.section-docu{
+		@include section-heading(url('img/documentation_mobile.gif'),100px);
+		border: $sticky-header;
+	}
+}
+
+.accordion-navigation{
+
+	a{
+		@include main-center;
+	}
+}

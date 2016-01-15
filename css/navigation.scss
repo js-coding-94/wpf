@@ -1,0 +1,90 @@
+//////////////
+// NAVIGATION:
+//////////////
+
+$main-font: "Lato" !important;
+$main-color: #D7B55E;
+$hover-color: #D1A73B;
+$back-nav-border: 3px;
+
+.sub-nav{
+	
+	margin:auto;
+	width:70%;
+    
+    a{
+        font-size: 16px;
+    }
+    
+	dd{
+		font-family: $main-font;
+		text-transform: uppercase;
+	}
+
+	dd.active a{
+		background: $main-color;
+	}
+
+	dd.active a:hover{
+		background: $hover-color;
+	}
+}
+
+#logo{
+	float: left;
+}
+
+#right-nav{
+	float: right;
+}
+
+#back-nav{
+	float: right;
+	
+	a{
+		color: #fff;
+		background: $main-color;
+		border-radius: $back-nav-border;
+	}
+
+	a:hover{
+		background: $hover-color;
+		border-radius: $back-nav-border;
+	}
+}
+
+.goto{
+
+	a{
+		color: transparent !important;
+	}
+
+	a:focus{
+		color: #999 !important;
+	}
+}
+
+.off-canvas-wrap{
+	display: none;	// setzt das off-canvas menü in der normalen ansicht auf nicht sichtbar
+}
+
+.title{
+	font-family: Courier New !important;
+}
+
+#img-logo{
+    max-width: 70%;
+}
+
+//nav-size for mobile version:
+
+@media only screen and (max-width: 40em) { 
+
+	.off-canvas-wrap{
+		display: block;
+	}
+
+	.normal-menu{
+		display: none !important;
+	}
+}

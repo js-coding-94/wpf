@@ -1,0 +1,225 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johannes Schick | Portfolio</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- verwendete Schriftart von Google einbinden -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <!-- selbst geschriebenes Stylesheet einbinden -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <!-- selbst geschriebenes JavaScript einbinden -->
+    <script src="js/jquery.js"></script>
+  </head>
+  <body>
+
+<!-- NAVIGATIONSBEREICH -->
+
+<!-- MENUBAR FÜR MOBILE ANSICHT -->
+
+<div class="off-canvas-wrap docs-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">{ j.schick }</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="top-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+    </nav>
+
+    <aside class="top-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Menu</label></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </aside>
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+<!-- MENUBAR FÜR NORMALE ANSICHT -->
+
+<div data-magellan-expedition="fixed" class="normal-menu">
+  <dl class="sub-nav">
+    <section id="logo">
+      <dd><a href="index.html"><img src="css/img/logo.png" alt="Logo of Johannes Schick" id="img-logo"></a></dd>
+      <dd><section class="goto"><a href="#about" tabindex="1">Go to Content</a></section></dd>
+      <dd><section class="goto"><a href="#footer" tabindex="2">Go to End</a></section></dd>    
+    </section>
+    <section id="right-nav">
+    <dd data-magellan-arrival="home"><a href="#home">Home</a></dd>
+    <dd data-magellan-arrival="about"><a href="#about" tabindex="3">About me</a></dd>
+    <dd data-magellan-arrival="projects"><a href="#projects" tabindex="4">Projects</a></dd>
+    <dd data-magellan-arrival="contact"><a href="#contact" tabindex="5">Contact</a></dd>
+  </section>
+  </dl>
+</div>
+
+<!-- HEADERBILDBEREICH -->
+
+<div id="header">
+  <a name="home"></a>
+  <h1 id="header-text">web- & software <br>developing</h1>
+</div>
+
+  <!-- ABOUT ME BEREICH -->
+
+<div class="section-aboutme">
+<h1 data-magellan-destination="about" class="headline"><a name="about"></a>{ about me }</h1>
+</div>
+
+<div class="site-content">
+
+<div class="row" data-equalizer>
+  <div class="large-6 columns" data-equalizer-watch tabindex="6">
+    <p>Welcome folks, I'm <strong>Johannes Schick</strong> - a young enthusiastic guy from Böheimkirchen, Austria. Currently, I'm studying <strong>Media Technology</strong> at the University of Applied Sciences in St. Pölten.</p>
+    <p>Since I was 14, I knew that the IT-World is a huge, inspiring working environment where you can build amazing applications for joy or to make your daily life easier. Personally, I love exploring programming languages and turn code into something users enjoy working with.</p>
+    <p>My programming skills include both front-end and back-end languages such as <strong>HTML, CSS, JavaScript, Java, PHP and C#</strong>. If you're interessted in having a motivated partner for various programming projects, feel free to contact me! </p>
+    <p>All the best,</br>
+      Johannes.
+    </p>
+  </div>
+  <div class="large-6 columns" id="div_me" data-equalizer-watch>
+    <img src="css/img/me.gif" alt="Portraitphoto of Johannes Schick" tabindex="7" id="me">
+  </div>
+</div>
+
+</div>
+
+<!-- PROJECTS BEREICH -->
+ 
+<div class="section-projects">
+<h1 data-magellan-destination="projects" class="headline"><a name="projects"></a>{ projects }</h1>
+</div>
+
+<div class="site-content">
+
+<h3 class="heading-doc">Don't be shy! Take a look at some of my recent work.</h3>
+
+<div class="row" data-equalizer>
+  <div class="large-4 columns" data-equalizer-watch >
+    <a href="http://flock-0808.students.fhstp.ac.at/" target="_blank" tabindex="8">
+      <div class="project-frame">
+        <img src="css/img/project.gif" alt="Website Project Theaterverein Klein und Lustig"/>
+          <div class="project-text">
+            <h3>Website Project</h3>
+                Theaterverein Klein & Lustig
+          </div>
+      </div>
+    </a>
+      <button type="button" class="button more" data-reveal-id="kleinlustig" tabindex="9">more infos...</button>
+    </div>
+
+  <div class="large-4 columns" data-equalizer-watch>
+    <a href="#" tabindex="10">
+      <div class="project-frame">
+        <img src="css/img/project_default.gif" alt="This is a default picture"/>
+          <div class="project-text">
+            <h3>Sample Project</h3>
+                Short Description
+          </div>
+      </div>
+    </a>
+        <button type="button" class="button more" data-reveal-id="another" tabindex="11">more infos...</button>
+    </div>
+
+  <div class="large-4 columns" data-equalizer-watch>
+    <a href="#" tabindex="12">
+      <div class="project-frame">
+        <img src="css/img/project_default.gif" alt="This is a default picture"/>
+          <div class="project-text">
+            <h3>Sample Project</h3>
+                Short Description
+          </div>
+      </div>
+    </a>
+      <button type="button" class="button more" data-reveal-id="another1" tabindex="13">more infos...</button>
+  </div>
+</div>
+
+
+<!-- POPUP FENSTER INHALT -->
+<div id="kleinlustig" class="reveal-modal" data-reveal>
+  <h2>Theaterverein Klein & Lustig - Website</h2>
+  <p>This website was developed by me and my colleagues in the 3rd semester. Klein und Lustig is a theatre association from Lower Austria, where we had the challenge to create a complete new Corporate Identity.</p>
+  <p>First, we had to create design concepts in order to get an idea of what the website should look like. When the design process was finished, we began to realize our thoughts with Wordpress. On the one hand we used a lot of plugins to visualize our concepts, on the other hand we had to customize the Default-CSS and even had to hardcode the PHP-Loops of the chosen Wordpress-Theme.</p>
+  <a class="close-reveal-modal">&times;</a>
+</div>
+
+<div id="another" class="reveal-modal" data-reveal>
+  <h2>Sample Project</h2>
+  <p>This is a sample text for a future project...</p>
+  <a class="close-reveal-modal">&times;</a>
+</div>
+
+<div id="another1" class="reveal-modal" data-reveal>
+  <h2>Sample Project</h2>
+  <p>This is a sample text for a future project...</p>
+  <a class="close-reveal-modal">&times;</a>
+</div>
+
+</div>
+
+<!-- CONTACT BEREICH -->
+
+<div class="section-contact">
+<h1 data-magellan-destination="contact" class="headline"><a name="contact"></a>{ contact }</h1>
+</div>
+
+<div class="site-content">
+
+<p style="text-align:center">Please use the form below to get in contact with me. :)</p>
+
+<form action="mailto:johannes.schick@gmx.at" method="post" enctype="text/plain">
+<div class="row">
+  <div class="large-6 columns">
+    <p><input type="text" placeholder="Name" tabindex="14"></p>
+    <p><input type="text" placeholder="E-Mail" tabindex="15"></p>
+  </div>
+
+  <div class="large-6 columns">
+    <p><textarea rows="4" placeholder="Message goes in here..." tabindex="16"></textarea></p>
+    <p><input type="submit" class="button round" value="SEND MESSAGE" tabindex="17"></p>
+  </div>
+</div>
+</form>
+
+</div>
+
+<!-- FOOTER BEREICH -->
+
+<footer id="footer">
+<section id="nav-footer">
+  <a href="documentation.html" tabindex="18">Documentation</a>
+  <a href="impressum.html" tabindex="19">Impressum</a>
+  <a href="gallery.html" tabindex="20">Gallery</a>
+</section>
+</footer>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+  </body>
+</html>

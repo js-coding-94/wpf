@@ -1,0 +1,80 @@
+//////////////
+// SCSS ELEMENTS:
+//////////////
+
+@import 'heading';
+@import 'navigation';
+@import 'projects';
+@import 'tab-nav';
+
+$main-font: "Lato" !important;
+$main-color: #D7B55E;
+
+// this mixin sets a border-radius of our choose:
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+//////////////
+// GENERAL:
+//////////////
+
+
+body, h2{
+	font-family: $main-font;
+}
+
+
+//////////////
+// CONTENT:
+//////////////
+
+.site-content{
+	margin: 5% 2% 5% 2%;
+}
+
+#div_me{
+	text-align: center;
+}
+
+#me{
+	width: 400px;
+	max-width: 100%;
+	@include border-radius(50%);
+}
+
+.round{
+	font-family: $main-font;
+	background-color: $main-color;
+	float: right;
+}
+
+//////////////
+// FOOTER:
+//////////////
+
+#footer{
+	padding-top: 3%;
+	padding-bottom: 3%;
+	background: url('img/footer.png');
+	background-position: center;
+
+	a{
+		color: #fff;
+	}
+
+	a:hover{
+		color: #D1D1D1;
+	}
+}
+
+#nav-footer{
+    text-align: center;
+    
+    a{
+        padding: 0.1875rem 1rem;
+    }
+}

@@ -1,0 +1,171 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Johannes Schick | Documentation</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+
+    <!-- verwendete Schriftart von Google einbinden -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    
+    <!-- icon für back-navigation einbinden -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <!-- selbst geschriebenes Stylesheet einbinden -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+  </head>
+  <body>
+
+<!-- NAVIGATIONSBEREICH -->
+
+<!-- MENUBAR FÜR MOBILE ANSICHT -->
+
+<div class="off-canvas-wrap docs-wrap" data-offcanvas>
+  <div class="inner-wrap">
+    <nav class="tab-bar">
+
+      <section class="middle tab-bar-section">
+        <h1 class="title">{ j.schick }</h1>
+      </section>
+
+      <section class="right-small">
+        <a class="top-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+
+    </nav>
+
+    <aside class="top-off-canvas-menu">
+      <ul class="off-canvas-list">
+        <li><label>Menu</label></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </aside>
+    <a class="exit-off-canvas"></a>
+  </div>
+</div>
+
+<!-- MENUBAR FÜR NORMALE ANSICHT -->
+
+<div data-magellan-expedition="fixed" class="normal-menu">
+  <dl class="sub-nav"> 
+    <section id="logo">
+      <dd><a href="index.html"><img src="css/img/logo.png" id="img-logo"></a></dd>
+      <dd><section class="goto"><a href="#tabnav-index" tabindex="1">Go to Content</a></section></dd>
+      <dd><section class="goto"><a href="#footer" tabindex="2">Go to End</a></section></dd>
+    </section>
+    <section id="back-nav">
+    <dd><a href="index.html" tabindex="3"><i class="fa fa-angle-double-right"></i> back to main page</a></dd>
+  </section>
+  </dl>
+</div>
+
+<!-- DOCUMENTATION BEREICH -->
+
+<div class="section-docu">
+<h1 data-magellan-destination="about" class="headline">{ documentation }</h1>
+</div>
+
+<div class="site-content" tabindex="3">
+
+
+<nav class="tab-nav">
+<ul class="tabs" data-tab>
+  <li class="tab-title active"><a href="#step1" tabindex="4">Step 1</a></li>
+  <li class="tab-title"><a href="#step2" tabindex="7">Step 2</a></li>
+  <li class="tab-title"><a href="#step3" tabindex="10">Step 3</a></li>
+  <li class="tab-title"><a href="#step4" tabindex="13">Step 4</a></li>
+</ul>
+</nav>
+
+<div class="tabs-content">
+  <div class="content active" id="step1">
+    <h3 class="heading-doc" tabindex="5">Getting familiar with Foundation</h3>
+    
+
+      <div class="row" data-equalizer>
+        <div class="large-6 columns" data-equalizer-watch>
+        <p><a href="http://foundation.zurb.com/" target="_blank"><img src="css/img/foundation.gif"></a></p>
+        </div>
+      <div class="large-6 columns" data-equalizer-watch tabindex="6">
+        <p>At first I had to go visit the Foundation-Website (picture has a link) and download Foundation 5. There are many sites where you can look up the documentation of the included framework components.</p> 
+          <p>So did I and started working on my own website including several components, such as "Magellan", "Grid", "Tabs" etc. Foundation offers a lot of useful tools to customize the look of your website, plus: It's full responsive! Moreover I had to change some CSS-references in order to get a specific look.</p>
+     </div>
+  </div>
+
+
+  </div>
+  <div class="content" id="step2">
+    <h3 class="heading-doc" tabindex="8">Setting up SCSS</h3>
+
+
+    <div class="row" data-equalizer>
+        <div class="large-6 columns" data-equalizer-watch>
+        <p><a href="http://sass-lang.com/" target="_blank"><img src="css/img/sass.gif"></a></p>
+        </div>
+      <div class="large-6 columns" data-equalizer-watch tabindex="9">
+        <p>Using Foundation offers a great possibility to use the preprocessing language SCSS (Syntically Cascading Style Sheets). With the use of this language, you are able to create variables, nested elements, mixins and many more possibilities to make your CSS-styles more organized.</p> 
+        <p>To use SCSS, I also had to download the precompiler Koala, which translates SCSS-code to customized CSS automatically and this method worked very well.</p>
+     </div>
+  </div>
+
+
+  </div>
+  <div class="content" id="step3">
+    <h3 class="heading-doc" tabindex="11">HTML- & SCSS Coding with Framework Components</h3>
+    
+    <div class="row" data-equalizer>
+        <div class="large-6 columns" data-equalizer-watch>
+        <p><img src="css/img/coding.gif"></p>
+        </div>
+      <div class="large-6 columns" data-equalizer-watch tabindex="12">
+        <p>For my HTML and SCSS coding I used the texteditor programm Sublime, which basically offers Syntax Highlighting and an autocomplete function for several web-based languages.</p>
+        <p>Personally, I used both Foundation classes and my own classes to customize the look of my website. In the end I had problems with Sublime due to file path problems. Therefore I switched to another texteditor programm named Brackets, which also worked out quite well.</p>
+     </div>
+  </div>
+
+  </div>
+  <div class="content" id="step4">
+    <h3 class="heading-doc" tabindex="14">Transfering project to GitHub</h3>
+    
+    <div class="row" data-equalizer>
+        <div class="large-6 columns" data-equalizer-watch>
+        <p><a href="https://github.com/" target="_blank"><img src="css/img/github.gif"></a></p>
+        </div>
+      <div class="large-6 columns" data-equalizer-watch tabindex="15">
+        <p>After the coding was finished the next task was to transfer this project to GitHub. First, I had to create an account in order to get access to the services.</p>
+          <p>The next step was create a profile and a new project.</p>
+     </div>
+  </div>
+
+  </div>
+</div>
+
+
+</div>
+
+<!-- FOOTER BEREICH -->
+
+<footer id="footer">
+<section id="nav-footer">
+  <a href="documentation.html" tabindex="17">Documentation</a>
+  <a href="impressum.html" tabindex="16">Impressum</a>
+  <a href="gallery.html" tabindex="18">Gallery</a>
+</section>
+</footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+  </body>
+</html>
